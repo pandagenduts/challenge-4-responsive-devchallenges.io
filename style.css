@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+    --font-play: "Playfair Display", serif;
+    --font-mont: "Montserrat", sans-serif;
+    --color-f29: #F2994A;
+    --color-333: #333;
+    --color-bd: #bdbdbd;
+    --color-4f: #4f4f4f;
+    --color-82: #828282;
+    --color-c4: #c4c4c4;
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-block-end: 50px;
+    padding: 24px;
+}
+
+.main-image {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.main-content {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+.ingredients {
+    display: flex;
+    align-items: flex-start;
+    margin: 12px 0;
+}
+
+.ingredients input {
+    margin-right: 20px;
+}
+
+.ing-last {
+    margin-bottom: 38px;
+}
+
+ol {
+    list-style: none;
+    counter-reset: item;
+}
+
+li {
+    counter-increment: item;
+    margin-bottom: 5px;
+}
+
+li:before {
+    margin-right: 15px;
+    content: counter(item);
+    background: #F2994A;;
+    border-radius: 5px;
+    color: white;
+    width: 30px;
+    height: 25px;
+    padding: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font-play);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.99px;
+}
+
+.instruction-item {
+    display: flex;
+    margin: 31px 0;
+}
+
+.instruction-item p {
+    flex: 1;
+}
+
+.content-icon {
+    float: left;
+}
+
+.content-icon p:last-child {
+    clear: left;
+}
+
+.content-left {
+    flex: 1;
+    padding-right: 10%;
+}
+
+.duration-item:nth-child(1) {
+    margin: 30px 0;
+}
+
+.duration-item:nth-child(2) {
+    margin: 30px 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-play);
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 63.98px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.99px;
+    color: var(--color-333);
+    margin-bottom: 32px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 23.99px;
+    font-style: italic;
+    margin-bottom: 31px;
+    font-weight: 100;
+}
+
+.desc-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.desc-container span {
+    transform: rotate(90deg);
+    font-size: 1.4rem;
+    color: var(--color-c4);
+    margin-top: -3px;
+    margin-right: 15px;
+}
+
+.description {
+    font-family: var(--font-mont);
+    font-size: 14px;
+    line-height: 17.07px;
+    font-weight: 500;
+    max-width: 600px;
+    font-style: italic;
+    color: var(--color-4f);
+    margin-bottom: 40px;
+}
+
+p {
+    font-family: var(--font-mont);
+    font-size: 16px;
+}
+
+.ingredients p {
+    color: var(--color-333);
+}
+
+.list-desc {
+    line-height: 25px;
+}
+
+.list-desc span {
+    font-style: italic;
+}
+
+.instruction-item p {
+    line-height: 24px;
+}
+
+.source {
+    line-height: 24px;
+    color: var(--color-bd);
+    font-style: italic;
+    margin-top: 40px;
+}
+
+.yields span,
+.yields p:nth-child(3) 
+{
+    color: var(--color-f29);
+}
+
+.yields span,
+.duration-item span {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.duration-item span {
+    color: var(--color-4f);
+}
+
+.cr-item-title {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12.19px;
+    color: var(--color-bd);
+    margin-bottom: 3px;
+}
+
+.cr-item-desc {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+    color: var(--color-333);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: var(--color-82);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (min-width: 1000px) {
+    .content-right {
+        min-width: 230px;
+        height: 315px;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 1000px) {
+    .yields {
+        margin-bottom: 10px;
+    }
+    
+    .main-content {
+        flex-direction: column-reverse;
+    }
+
+    .duration {
+        display: flex;
+        align-items: center;
+    }
+
+    .duration-item {
+        flex: 1;
+    }
+
+    .content-left {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 24px;
+        line-height: 31.99px;
+    }
+
+    .description {
+        font-size: 12px;
+        line-height: 14.63px;
+    }
+
+     .cr-item-title {
+        font-size: 8px;
+        line-height: 9.75px;
+     }
+       
+    .cr-item-desc {
+        font-size: 10px;
+        line-height: 12.19px;
+    }
+
+    .duration-item span {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 23.99px;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 21.33px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .instruction-title {
+        font-size: 24px;
+    }
+
+    .instruction-item p {
+        font-size: 16px;
+    }
+
+    .source {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

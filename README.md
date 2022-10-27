@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://dancing-rolypoly-a54289.netlify.app/">
+    <a href="https://pandagenduts-recipe-page.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -36,7 +36,7 @@
 ## Overview
 
 This is the last project i take before the devchallenges.io down (for just a couple day). 
-This lil project is fun. One challenging part is to create the right status box and make it responsive and also a custom ordered list. Check the [demo](https://dancing-rolypoly-a54289.netlify.app/) on how i did it :)
+This lil project is fun. One challenging part is to create the right status box and make it responsive and also a custom ordered list. Check the [demo](https://pandagenduts-recipe-page.netlify.app/) on how i did it :)
 
 ### Built With
 
